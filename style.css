@@ -18,7 +18,7 @@ body {
     height: 70vh;
     margin: 16vh auto 5vh;
     position: relative;
-    width: 60%;
+    width: 64%;
 }
 
 .sedan {
@@ -65,11 +65,11 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 2.1vh;
     line-height: 1.6;
-    top: 26vh;
     left: 7vh;
     position: absolute;
+    top: 26vh;
     text-align: left;
-    width: 68%;
+    width: 65%;
 
 }
 
@@ -80,10 +80,11 @@ body {
     bottom: 6vh;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 1.45rem;
-    left: 7vh;
-    padding: 3% 9%;
-    position: absolute;
+    margin-top: 10%;
     mix-blend-mode: screen;
+    padding: 4% 10%;
+    left: 7vh;
+    position: absolute;
 
 }
 
@@ -173,10 +174,11 @@ body {
 
     .attribution {
         font-size: 11px;
-        text-align: center;
-        padding-bottom: 15px;
         position: relative;
+        padding-bottom: 25px;
+        text-align: center;
         top: 75vh;
+
     }
     
 }
