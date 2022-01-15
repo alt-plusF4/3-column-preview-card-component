@@ -1,0 +1,176 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+}
+
+.main {
+    border-radius: 8px;
+    height: 70vh;
+    margin: 16vh auto 5vh;
+    position: relative;
+    width: 60%;
+}
+
+.sedan {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 70vh;
+    position: relative;
+    width: 33.33%;
+}
+
+.suv {
+    background-color: var(--Dark-cyan);
+    height: 70vh;
+    position: relative;
+    left: 33.333%;
+    bottom: 70vh;
+    width: 33.33%;
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    bottom: 140vh;
+    height: 70vh;
+    position: relative;
+    left: 66.66666%;
+    width: 33.33%;
+
+}
+
+.titles {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 5.8vh;
+    position: absolute;
+    top: 14vh;
+    left: 7vh
+}
+
+.des {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2.1vh;
+    line-height: 1.6;
+    top: 26vh;
+    left: 7vh;
+    position: absolute;
+    text-align: left;
+    width:68%;
+
+}
+
+.button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid white;
+    border-radius: 25px;
+    bottom: 6vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.45rem;
+    left: 7vh;
+    padding: 3% 9%;
+    position: absolute;
+    mix-blend-mode: screen;
+
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 4vh;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+#sedan-ico {
+    position: absolute;
+    top: 6.5vh;
+    left: 7vh;
+}
+
+#suv-ico {
+    position: absolute;
+    top: 6.5vh;
+    left: 7vh;
+}
+
+#lux-ico {
+    position: absolute;
+    top: 6.5vh;
+    left: 7vh;
+}
+
+
+@media (max-width:790px){
+    .main {
+        background-color: red;
+        border-radius: 8px;
+        height: 100vh;
+        margin: 5vh auto 10vh;
+        position: relative;
+        width: 80%;
+    }
+
+    .sedan {
+        background-color: hsl(31, 77%, 52%);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        height: 60vh;
+        position: relative;
+        width: 100%;
+    }
+    
+    .suv {
+        background-color: hsl(184, 100%, 22%);
+        height: 60vh;
+        position: relative;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 30vh;
+        width: 100%;
+    }
+    
+    .luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        height: 60vh;
+        left: 50%;
+        position: relative;
+        right: 50%;
+        top: 29vh;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    
+}
+
