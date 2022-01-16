@@ -2,6 +2,7 @@
     --Bright-orange: hsl(31, 77%, 52%);
     --Dark-cyan: hsl(184, 100%, 22%);
     --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Very-light-gray: hsl(0, 0%, 95%);
 }
 
 html{
@@ -9,16 +10,16 @@ html{
 }
 
 body {
-    background-color: white;
+    background-color: var(--Very-light-gray);
     text-align: center;
 }
 
 .main {
     border-radius: 8px;
-    height: 70vh;
+    height: 69vh;
     margin: 16vh auto 5vh;
     position: relative;
-    width: 64%;
+    width: 65%;
 }
 
 .sedan {
@@ -74,7 +75,7 @@ body {
 }
 
 .button {
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--Very-light-gray);
     border: 2px solid white;
     border-radius: 25px;
     bottom: 6vh;
@@ -93,6 +94,7 @@ body {
     border: 2px solid white;
     color: white;
     cursor: pointer;
+    transition: ease-in-out 10ms;
 }
 
 
@@ -138,7 +140,7 @@ body {
     }
 
     .sedan {
-        background-color: hsl(31, 77%, 52%);
+        background-color: var(--Bright-orange);
         border-bottom-left-radius: 0;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -148,7 +150,7 @@ body {
     }
     
     .suv {
-        background-color: hsl(184, 100%, 22%);
+        background-color: var(--Dark-cyan);
         height: 60vh;
         position: relative;
         right: 50%;
@@ -159,7 +161,7 @@ body {
     }
     
     .luxury {
-        background-color: hsl(179, 100%, 13%);
+        background-color: var(--Very-dark-cyan);
         border-top-right-radius: 0;
         border-bottom-right-radius: 8px;
         border-bottom-left-radius: 8px;
@@ -175,7 +177,7 @@ body {
     .attribution {
         font-size: 11px;
         position: relative;
-        padding-bottom: 25px;
+        padding-bottom: 15px;
         text-align: center;
         top: 75vh;
 
